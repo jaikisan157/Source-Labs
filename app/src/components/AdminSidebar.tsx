@@ -91,7 +91,7 @@ export default function AdminSidebar() {
       </aside>
 
       {/* ── MOBILE BOTTOM NAV ──────────────────────────────────── */}
-      <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-900 border-t border-slate-800 flex items-center justify-around px-2 h-16 safe-area-bottom">
+      <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-900 border-t border-slate-800 flex items-center safe-area-bottom" style={{ height: '56px' }}>
         {menuItems.slice(0, 5).map((item) => {
           const Icon = item.icon;
           const active = isActive(item.path);
@@ -99,12 +99,14 @@ export default function AdminSidebar() {
             <Link
               key={item.path}
               to={item.path}
-              className={`flex flex-col items-center gap-1 px-3 py-2 rounded-lg transition-colors ${
+              className={`flex-1 flex flex-col items-center justify-center gap-0.5 py-2 transition-colors min-w-0 ${
                 active ? 'text-primary' : 'text-slate-500 hover:text-slate-300'
               }`}
             >
-              <Icon className="h-5 w-5" />
-              <span className="text-[10px] font-medium">{item.label}</span>
+              <Icon className="h-[18px] w-[18px] flex-shrink-0" />
+              <span className="text-[9px] xs:text-[10px] font-medium truncate w-full text-center px-0.5 hidden min-[360px]:block">
+                {item.label}
+              </span>
             </Link>
           );
         })}
