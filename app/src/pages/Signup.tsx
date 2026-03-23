@@ -74,7 +74,7 @@ export default function Signup() {
         <div className="text-center mb-10">
           <Link to="/" className="inline-block">
             <span className="text-3xl font-serif text-foreground">
-              Poppi<span className="text-primary">ns</span>
+              Popp<span className="text-primary">ins</span>
             </span>
           </Link>
         </div>

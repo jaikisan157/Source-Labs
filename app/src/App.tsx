@@ -34,6 +34,7 @@ import AdminLayout from '@/layouts/AdminLayout';
 // Protected Route Components
 import ProtectedRoute from '@/components/ProtectedRoute';
 import AdminRoute from '@/components/AdminRoute';
+import PWAInstallBanner from '@/components/PWAInstallBanner';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -51,6 +52,7 @@ function App() {
         <CartProvider>
           <SocketProvider>
             <Router>
+              <PWAInstallBanner />
               <Routes>
                 {/* Customer Routes */}
                 <Route path="/" element={<MainLayout />}>
