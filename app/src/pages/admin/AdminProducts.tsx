@@ -18,12 +18,10 @@ import {
   Edit,
   Trash2,
   Eye,
-  EyeOff,
   Star,
   Upload,
   X,
   Image as ImageIcon,
-  CheckCircle,
 } from 'lucide-react';
 import { toast } from 'sonner';
 

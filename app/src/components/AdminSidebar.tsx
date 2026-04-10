@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
   LayoutDashboard,
-  ShoppingBag,
-  Users,
   Package,
   BarChart3,
   Settings,

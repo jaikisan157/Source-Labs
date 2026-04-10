@@ -7,8 +7,6 @@ import {
   Eye,
   MousePointerClick,
   TrendingUp,
-  ArrowUpRight,
-  Globe,
 } from 'lucide-react';
 
 interface DashboardData {
